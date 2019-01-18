@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow
+        android:layout_marginTop="10.0dip">
+        <EditText
+            android:textColor="#ff000000"
+            android:id="@+id/fname"
+            android:inputType="textCapSentences"
+            android:hint="First Name"
+            android:layout_weight="1.0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10.0dip">
+        <EditText
+            android:textColor="#ff000000"
+            android:id="@+id/lname"
+            android:inputType="textCapSentences"
+            android:hint="First Name"
+            android:layout_width="100.0dip"
+            android:layout_weight="1.0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10.0dip">
+        <Button
+            android:id="@+id/btnCalendar"
+            android:text="Select Date"
+            android:layout_weight="0.0" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textColor="#ff000000"
+            android:id="@+id/txtDate"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10.0dip">
+        <Button
+            android:textColor="#ff000000"
+            android:id="@+id/btncan"
+            android:text="Cancel"
+            android:layout_weight="0.5" />
+        <Button android:textColor="#ff000000"
+            android:id="@+id/btnsave"
+            android:text="Save"
+            android:layout_weight="0.5" />
+    </TableRow>
+
+</TableLayout>

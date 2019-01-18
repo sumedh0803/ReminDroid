@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/myImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/home" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="What's up for today?"
+                    android:textSize="30sp"
+                    android:textColor="#ffffff" />
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reminders:"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="10dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_rem_today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All caught up!"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:visibility="gone"
+                android:id="@+id/norem"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To-do:"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="10dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_todo_today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All caught up!"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:visibility="gone"
+                android:id="@+id/notodo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Birthdays:"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp"
+                android:layout_marginHorizontal="10dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_bday_today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No birthdays today :("
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:visibility="gone"
+                android:id="@+id/nobday"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>
